@@ -1,0 +1,437 @@
+Internal Server Error: /api/login/
+Traceback (most recent call last):
+  File "C:\Users\estev\Documents\manutencar_mostratec\repositorio_back\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\estev\Documents\manutencar_mostratec\repositorio_back\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\estev\Documents\manutencar_mostratec\repositorio_back\.venv\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\estev\Documents\manutencar_mostratec\repositorio_back\core\views.py", line 28, in login_view
+    data = json.loads(request.body)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\estev\AppData\Local\Programs\Python\Python312\Lib\json\__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\estev\AppData\Local\Programs\Python\Python312\Lib\json\decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\estev\AppData\Local\Programs\Python\Python312\Lib\json\decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+"POST /api/login/ HTTP/1.1" 500 145
+Internal Server Error: /api/login/
+Traceback (most recent call last):
+  File "C:\Users\estev\Documents\manutencar_mostratec\repositorio_back\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\estev\Documents\manutencar_mostratec\repositorio_back\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\estev\Documents\manutencar_mostratec\repositorio_back\.venv\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\estev\Documents\manutencar_mostratec\repositorio_back\core\views.py", line 33, in login_view
+    user = authenticate(request, email=email, password=password)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\estev\Documents\manutencar_mostratec\repositorio_back\.venv\Lib\site-packages\django\views\decorators\debug.py", line 75, in sensitive_variables_wrapper
+    return func(*func_args, **func_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\estev\Documents\manutencar_mostratec\repositorio_back\.venv\Lib\site-packages\django\contrib\auth\__init__.py", line 70, in authenticate
+    for backend, backend_path in _get_backends(return_tuples=True):
+                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\estev\Documents\manutencar_mostratec\repositorio_back\.venv\Lib\site-packages\django\contrib\auth\__init__.py", line 29, in _get_backends
+    backend = load_backend(backend_path)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\estev\Documents\manutencar_mostratec\repositorio_back\.venv\Lib\site-packages\django\contrib\auth\__init__.py", line 23, in load_backend
+    return import_string(path)()
+           ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\estev\Documents\manutencar_mostratec\repositorio_back\.venv\Lib\site-packages\django\utils\module_loading.py", line 30, in import_string
+    return cached_import(module_path, class_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\estev\Documents\manutencar_mostratec\repositorio_back\.venv\Lib\site-packages\django\utils\module_loading.py", line 15, in cached_import
+    module = import_module(module_path)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\estev\AppData\Local\Programs\Python\Python312\Lib\importlib\__init__.py", line 90, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 1387, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1360, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1324, in _find_and_load_unlocked
+ModuleNotFoundError: No module named 'core.backends'
+"POST /api/login/ HTTP/1.1" 500 145
+Internal Server Error: /api/login/
+Traceback (most recent call last):
+  File "C:\Users\estev\Documents\manutencar_mostratec\repositorio_back\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\estev\Documents\manutencar_mostratec\repositorio_back\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\estev\Documents\manutencar_mostratec\repositorio_back\.venv\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\estev\Documents\manutencar_mostratec\repositorio_back\core\views.py", line 33, in login_view
+    user = authenticate(request, email=email, password=password)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\estev\Documents\manutencar_mostratec\repositorio_back\.venv\Lib\site-packages\django\views\decorators\debug.py", line 75, in sensitive_variables_wrapper
+    return func(*func_args, **func_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\estev\Documents\manutencar_mostratec\repositorio_back\.venv\Lib\site-packages\django\contrib\auth\__init__.py", line 70, in authenticate
+    for backend, backend_path in _get_backends(return_tuples=True):
+                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\estev\Documents\manutencar_mostratec\repositorio_back\.venv\Lib\site-packages\django\contrib\auth\__init__.py", line 29, in _get_backends
+    backend = load_backend(backend_path)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\estev\Documents\manutencar_mostratec\repositorio_back\.venv\Lib\site-packages\django\contrib\auth\__init__.py", line 23, in load_backend
+    return import_string(path)()
+           ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\estev\Documents\manutencar_mostratec\repositorio_back\.venv\Lib\site-packages\django\utils\module_loading.py", line 30, in import_string
+    return cached_import(module_path, class_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\estev\Documents\manutencar_mostratec\repositorio_back\.venv\Lib\site-packages\django\utils\module_loading.py", line 15, in cached_import
+    module = import_module(module_path)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\estev\AppData\Local\Programs\Python\Python312\Lib\importlib\__init__.py", line 90, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 1387, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1360, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1324, in _find_and_load_unlocked
+ModuleNotFoundError: No module named 'core.backends'
+"POST /api/login/ HTTP/1.1" 500 145
+Internal Server Error: /api/login/
+"POST /api/login/ HTTP/1.1" 500 44
+Internal Server Error: /api/login/
+"POST /api/login/ HTTP/1.1" 500 44
+Internal Server Error: /api/login/
+"POST /api/login/ HTTP/1.1" 500 44
+Invalid HTTP_HOST header: '127.0.0.1:8000'. You may need to add '127.0.0.1' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "C:\Users\estev\Documents\manutencar_mostratec\repositorio_back\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\estev\Documents\manutencar_mostratec\repositorio_back\.venv\Lib\site-packages\django\utils\deprecation.py", line 128, in __call__
+    response = self.process_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\estev\Documents\manutencar_mostratec\repositorio_back\.venv\Lib\site-packages\django\middleware\common.py", line 48, in process_request
+    host = request.get_host()
+           ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\estev\Documents\manutencar_mostratec\repositorio_back\.venv\Lib\site-packages\django\http\request.py", line 151, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: '127.0.0.1:8000'. You may need to add '127.0.0.1' to ALLOWED_HOSTS.
+Internal Server Error: /api/login/
+"POST /api/login/ HTTP/1.1" 500 44
+Internal Server Error: /api/login/
+Traceback (most recent call last):
+  File "C:\Users\estev\Documents\manutencar_mostratec\repositorio_back\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\estev\Documents\manutencar_mostratec\repositorio_back\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\estev\Documents\manutencar_mostratec\repositorio_back\.venv\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\estev\Documents\manutencar_mostratec\repositorio_back\core\views.py", line 28, in login_view
+    user = authenticate(request, email=email, password=password)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\estev\Documents\manutencar_mostratec\repositorio_back\.venv\Lib\site-packages\django\views\decorators\debug.py", line 75, in sensitive_variables_wrapper
+    return func(*func_args, **func_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\estev\Documents\manutencar_mostratec\repositorio_back\.venv\Lib\site-packages\django\contrib\auth\__init__.py", line 70, in authenticate
+    for backend, backend_path in _get_backends(return_tuples=True):
+                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\estev\Documents\manutencar_mostratec\repositorio_back\.venv\Lib\site-packages\django\contrib\auth\__init__.py", line 29, in _get_backends
+    backend = load_backend(backend_path)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\estev\Documents\manutencar_mostratec\repositorio_back\.venv\Lib\site-packages\django\contrib\auth\__init__.py", line 23, in load_backend
+    return import_string(path)()
+           ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\estev\Documents\manutencar_mostratec\repositorio_back\.venv\Lib\site-packages\django\utils\module_loading.py", line 30, in import_string
+    return cached_import(module_path, class_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\estev\Documents\manutencar_mostratec\repositorio_back\.venv\Lib\site-packages\django\utils\module_loading.py", line 15, in cached_import
+    module = import_module(module_path)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\estev\AppData\Local\Programs\Python\Python312\Lib\importlib\__init__.py", line 90, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 1387, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1360, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1324, in _find_and_load_unlocked
+ModuleNotFoundError: No module named 'core.backends'
+"POST /api/login/ HTTP/1.1" 500 145
+Internal Server Error: /api/login/
+Traceback (most recent call last):
+  File "C:\Users\estev\Documents\manutencar_mostratec\repositorio_back\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\estev\Documents\manutencar_mostratec\repositorio_back\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\estev\Documents\manutencar_mostratec\repositorio_back\.venv\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\estev\Documents\manutencar_mostratec\repositorio_back\core\views.py", line 28, in login_view
+    user = authenticate(request, email=email, password=password)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\estev\Documents\manutencar_mostratec\repositorio_back\.venv\Lib\site-packages\django\views\decorators\debug.py", line 75, in sensitive_variables_wrapper
+    return func(*func_args, **func_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\estev\Documents\manutencar_mostratec\repositorio_back\.venv\Lib\site-packages\django\contrib\auth\__init__.py", line 70, in authenticate
+    for backend, backend_path in _get_backends(return_tuples=True):
+                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\estev\Documents\manutencar_mostratec\repositorio_back\.venv\Lib\site-packages\django\contrib\auth\__init__.py", line 29, in _get_backends
+    backend = load_backend(backend_path)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\estev\Documents\manutencar_mostratec\repositorio_back\.venv\Lib\site-packages\django\contrib\auth\__init__.py", line 23, in load_backend
+    return import_string(path)()
+           ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\estev\Documents\manutencar_mostratec\repositorio_back\.venv\Lib\site-packages\django\utils\module_loading.py", line 30, in import_string
+    return cached_import(module_path, class_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\estev\Documents\manutencar_mostratec\repositorio_back\.venv\Lib\site-packages\django\utils\module_loading.py", line 15, in cached_import
+    module = import_module(module_path)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\estev\AppData\Local\Programs\Python\Python312\Lib\importlib\__init__.py", line 90, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 1387, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1360, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1324, in _find_and_load_unlocked
+ModuleNotFoundError: No module named 'core.backends'
+"POST /api/login/ HTTP/1.1" 500 145
+Internal Server Error: /api/login/
+"POST /api/login/ HTTP/1.1" 500 44
+Internal Server Error: /api/login/
+"POST /api/login/ HTTP/1.1" 500 44
+Internal Server Error: /api/login/
+"POST /api/login/ HTTP/1.1" 500 44
+Internal Server Error: /api/register/
+Traceback (most recent call last):
+  File "C:\Users\estev\Documents\manutencar_mostratec\repositorio_back\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\estev\Documents\manutencar_mostratec\repositorio_back\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\estev\Documents\manutencar_mostratec\repositorio_back\.venv\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\estev\Documents\manutencar_mostratec\repositorio_back\.venv\Lib\site-packages\rest_framework\viewsets.py", line 124, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\estev\Documents\manutencar_mostratec\repositorio_back\.venv\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\estev\Documents\manutencar_mostratec\repositorio_back\.venv\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\estev\Documents\manutencar_mostratec\repositorio_back\.venv\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\estev\Documents\manutencar_mostratec\repositorio_back\.venv\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\estev\Documents\manutencar_mostratec\repositorio_back\.venv\Lib\site-packages\rest_framework\mixins.py", line 46, in list
+    return Response(serializer.data)
+                    ^^^^^^^^^^^^^^^
+  File "C:\Users\estev\Documents\manutencar_mostratec\repositorio_back\.venv\Lib\site-packages\rest_framework\serializers.py", line 795, in data
+    ret = super().data
+          ^^^^^^^^^^^^
+  File "C:\Users\estev\Documents\manutencar_mostratec\repositorio_back\.venv\Lib\site-packages\rest_framework\serializers.py", line 249, in data
+    self._data = self.to_representation(self.instance)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\estev\Documents\manutencar_mostratec\repositorio_back\.venv\Lib\site-packages\rest_framework\serializers.py", line 714, in to_representation
+    self.child.to_representation(item) for item in iterable
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\estev\Documents\manutencar_mostratec\repositorio_back\.venv\Lib\site-packages\rest_framework\serializers.py", line 523, in to_representation
+    for field in fields:
+                 ^^^^^^
+  File "C:\Users\estev\Documents\manutencar_mostratec\repositorio_back\.venv\Lib\site-packages\rest_framework\serializers.py", line 384, in _readable_fields
+    for field in self.fields.values():
+                 ^^^^^^^^^^^
+  File "C:\Users\estev\Documents\manutencar_mostratec\repositorio_back\.venv\Lib\site-packages\django\utils\functional.py", line 47, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+                                         ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\estev\Documents\manutencar_mostratec\repositorio_back\.venv\Lib\site-packages\rest_framework\serializers.py", line 372, in fields
+    for key, value in self.get_fields().items():
+                      ^^^^^^^^^^^^^^^^^
+  File "C:\Users\estev\Documents\manutencar_mostratec\repositorio_back\.venv\Lib\site-packages\rest_framework\serializers.py", line 1079, in get_fields
+    field_names = self.get_field_names(declared_fields, info)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\estev\Documents\manutencar_mostratec\repositorio_back\.venv\Lib\site-packages\rest_framework\serializers.py", line 1175, in get_field_names
+    assert field_name in fields, (
+           ^^^^^^^^^^^^^^^^^^^^
+AssertionError: The field 'username' was declared on serializer UsuarioBasicoSerializer, but has not been included in the 'fields' option.
+"GET /api/register/ HTTP/1.1" 500 145
+Internal Server Error: /api/register/
+Traceback (most recent call last):
+  File "C:\Users\estev\Documents\manutencar_mostratec\repositorio_back\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\estev\Documents\manutencar_mostratec\repositorio_back\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\estev\Documents\manutencar_mostratec\repositorio_back\.venv\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\estev\Documents\manutencar_mostratec\repositorio_back\.venv\Lib\site-packages\rest_framework\viewsets.py", line 124, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\estev\Documents\manutencar_mostratec\repositorio_back\.venv\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\estev\Documents\manutencar_mostratec\repositorio_back\.venv\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\estev\Documents\manutencar_mostratec\repositorio_back\.venv\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\estev\Documents\manutencar_mostratec\repositorio_back\.venv\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\estev\Documents\manutencar_mostratec\repositorio_back\.venv\Lib\site-packages\rest_framework\mixins.py", line 46, in list
+    return Response(serializer.data)
+                    ^^^^^^^^^^^^^^^
+  File "C:\Users\estev\Documents\manutencar_mostratec\repositorio_back\.venv\Lib\site-packages\rest_framework\serializers.py", line 795, in data
+    ret = super().data
+          ^^^^^^^^^^^^
+  File "C:\Users\estev\Documents\manutencar_mostratec\repositorio_back\.venv\Lib\site-packages\rest_framework\serializers.py", line 249, in data
+    self._data = self.to_representation(self.instance)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\estev\Documents\manutencar_mostratec\repositorio_back\.venv\Lib\site-packages\rest_framework\serializers.py", line 714, in to_representation
+    self.child.to_representation(item) for item in iterable
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\estev\Documents\manutencar_mostratec\repositorio_back\.venv\Lib\site-packages\rest_framework\serializers.py", line 523, in to_representation
+    for field in fields:
+                 ^^^^^^
+  File "C:\Users\estev\Documents\manutencar_mostratec\repositorio_back\.venv\Lib\site-packages\rest_framework\serializers.py", line 384, in _readable_fields
+    for field in self.fields.values():
+                 ^^^^^^^^^^^
+  File "C:\Users\estev\Documents\manutencar_mostratec\repositorio_back\.venv\Lib\site-packages\django\utils\functional.py", line 47, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+                                         ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\estev\Documents\manutencar_mostratec\repositorio_back\.venv\Lib\site-packages\rest_framework\serializers.py", line 372, in fields
+    for key, value in self.get_fields().items():
+                      ^^^^^^^^^^^^^^^^^
+  File "C:\Users\estev\Documents\manutencar_mostratec\repositorio_back\.venv\Lib\site-packages\rest_framework\serializers.py", line 1079, in get_fields
+    field_names = self.get_field_names(declared_fields, info)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\estev\Documents\manutencar_mostratec\repositorio_back\.venv\Lib\site-packages\rest_framework\serializers.py", line 1175, in get_field_names
+    assert field_name in fields, (
+           ^^^^^^^^^^^^^^^^^^^^
+AssertionError: The field 'username' was declared on serializer UsuarioBasicoSerializer, but has not been included in the 'fields' option.
+"GET /api/register/ HTTP/1.1" 500 149907
+Internal Server Error: /api/register
+Traceback (most recent call last):
+  File "C:\Users\estev\Documents\manutencar_mostratec\repositorio_back\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\estev\Documents\manutencar_mostratec\repositorio_back\.venv\Lib\site-packages\django\utils\deprecation.py", line 131, in __call__
+    response = self.process_response(request, response)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\estev\Documents\manutencar_mostratec\repositorio_back\.venv\Lib\site-packages\django\middleware\common.py", line 108, in process_response
+    return self.response_redirect_class(self.get_full_path_with_slash(request))
+                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\estev\Documents\manutencar_mostratec\repositorio_back\.venv\Lib\site-packages\django\middleware\common.py", line 87, in get_full_path_with_slash
+    raise RuntimeError(
+RuntimeError: You called this URL via POST, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining POST data. Change your form to point to 127.0.0.1:8000/api/register/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+"POST /api/register HTTP/1.1" 500 72617
+Internal Server Error: /api/register
+Traceback (most recent call last):
+  File "C:\Users\estev\Documents\manutencar_mostratec\repositorio_back\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\estev\Documents\manutencar_mostratec\repositorio_back\.venv\Lib\site-packages\django\utils\deprecation.py", line 131, in __call__
+    response = self.process_response(request, response)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\estev\Documents\manutencar_mostratec\repositorio_back\.venv\Lib\site-packages\django\middleware\common.py", line 108, in process_response
+    return self.response_redirect_class(self.get_full_path_with_slash(request))
+                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\estev\Documents\manutencar_mostratec\repositorio_back\.venv\Lib\site-packages\django\middleware\common.py", line 87, in get_full_path_with_slash
+    raise RuntimeError(
+RuntimeError: You called this URL via POST, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining POST data. Change your form to point to 127.0.0.1:8000/api/register/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+"POST /api/register HTTP/1.1" 500 72617
+Internal Server Error: /api-authlogin/
+Traceback (most recent call last):
+  File "C:\Users\estev\Documents\manutencar_mostratec\repositorio_back\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\estev\Documents\manutencar_mostratec\repositorio_back\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\estev\Documents\manutencar_mostratec\repositorio_back\.venv\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\estev\Documents\manutencar_mostratec\repositorio_back\.venv\Lib\site-packages\django\utils\decorators.py", line 48, in _wrapper
+    return bound_method(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\estev\Documents\manutencar_mostratec\repositorio_back\.venv\Lib\site-packages\django\utils\decorators.py", line 48, in _wrapper
+    return bound_method(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\estev\Documents\manutencar_mostratec\repositorio_back\.venv\Lib\site-packages\django\views\decorators\debug.py", line 143, in sensitive_post_parameters_wrapper
+    return view(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\estev\Documents\manutencar_mostratec\repositorio_back\.venv\Lib\site-packages\django\utils\decorators.py", line 48, in _wrapper
+    return bound_method(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\estev\Documents\manutencar_mostratec\repositorio_back\.venv\Lib\site-packages\django\utils\decorators.py", line 188, in _view_wrapper
+    result = _process_exception(request, e)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\estev\Documents\manutencar_mostratec\repositorio_back\.venv\Lib\site-packages\django\utils\decorators.py", line 186, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\estev\Documents\manutencar_mostratec\repositorio_back\.venv\Lib\site-packages\django\utils\decorators.py", line 48, in _wrapper
+    return bound_method(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\estev\Documents\manutencar_mostratec\repositorio_back\.venv\Lib\site-packages\django\views\decorators\cache.py", line 80, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\estev\Documents\manutencar_mostratec\repositorio_back\.venv\Lib\site-packages\django\contrib\auth\views.py", line 89, in dispatch
+    return super().dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\estev\Documents\manutencar_mostratec\repositorio_back\.venv\Lib\site-packages\django\views\generic\base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\estev\Documents\manutencar_mostratec\repositorio_back\.venv\Lib\site-packages\django\views\generic\edit.py", line 150, in post
+    if form.is_valid():
+       ^^^^^^^^^^^^^^^
+  File "C:\Users\estev\Documents\manutencar_mostratec\repositorio_back\.venv\Lib\site-packages\django\forms\forms.py", line 197, in is_valid
+    return self.is_bound and not self.errors
+                                 ^^^^^^^^^^^
+  File "C:\Users\estev\Documents\manutencar_mostratec\repositorio_back\.venv\Lib\site-packages\django\forms\forms.py", line 192, in errors
+    self.full_clean()
+  File "C:\Users\estev\Documents\manutencar_mostratec\repositorio_back\.venv\Lib\site-packages\django\forms\forms.py", line 326, in full_clean
+    self._clean_form()
+  File "C:\Users\estev\Documents\manutencar_mostratec\repositorio_back\.venv\Lib\site-packages\django\forms\forms.py", line 342, in _clean_form
+    cleaned_data = self.clean()
+                   ^^^^^^^^^^^^
+  File "C:\Users\estev\Documents\manutencar_mostratec\repositorio_back\.venv\Lib\site-packages\django\contrib\auth\forms.py", line 356, in clean
+    self.user_cache = authenticate(
+                      ^^^^^^^^^^^^^
+  File "C:\Users\estev\Documents\manutencar_mostratec\repositorio_back\.venv\Lib\site-packages\django\views\decorators\debug.py", line 75, in sensitive_variables_wrapper
+    return func(*func_args, **func_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\estev\Documents\manutencar_mostratec\repositorio_back\.venv\Lib\site-packages\django\contrib\auth\__init__.py", line 70, in authenticate
+    for backend, backend_path in _get_backends(return_tuples=True):
+                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\estev\Documents\manutencar_mostratec\repositorio_back\.venv\Lib\site-packages\django\contrib\auth\__init__.py", line 29, in _get_backends
+    backend = load_backend(backend_path)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\estev\Documents\manutencar_mostratec\repositorio_back\.venv\Lib\site-packages\django\contrib\auth\__init__.py", line 23, in load_backend
+    return import_string(path)()
+           ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\estev\Documents\manutencar_mostratec\repositorio_back\.venv\Lib\site-packages\django\utils\module_loading.py", line 30, in import_string
+    return cached_import(module_path, class_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\estev\Documents\manutencar_mostratec\repositorio_back\.venv\Lib\site-packages\django\utils\module_loading.py", line 15, in cached_import
+    module = import_module(module_path)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\estev\AppData\Local\Programs\Python\Python312\Lib\importlib\__init__.py", line 90, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 1387, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1360, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1324, in _find_and_load_unlocked
+ModuleNotFoundError: No module named 'core.backends'
+"POST /api-authlogin/ HTTP/1.1" 500 182085

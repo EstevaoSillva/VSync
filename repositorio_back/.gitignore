@@ -1,0 +1,28 @@
+# Django
+# Compiled file
+__pycache__/
+.pytest_cache/
+# IDE files
+.idea/
+.vscode/
+# Local settings
+local.py
+env/
+/venv/
+/.venv/
+.venv/
+# Static files
+static/
+# Media files
+media/
+# Database
+db.sqlite3
+
+# Angular
+# Output files
+dist/
+# Cache
+node_modules/
+npm-cache/
+# IDE files
+.angular/
